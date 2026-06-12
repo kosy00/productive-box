@@ -13,6 +13,7 @@ jobs:
       - name: Update gist
         uses: maxam2017/productive-box@master
         env:
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
           TIMEZONE: ${{ vars.TIMEZONE }}
